@@ -80,6 +80,7 @@ clean: example/clean
 # Recursive "all" directory target.
 example/all: example/CMakeFiles/main.dir/all
 example/all: example/CMakeFiles/client.dir/all
+example/all: example/CMakeFiles/testcli.dir/all
 .PHONY : example/all
 
 # Recursive "preinstall" directory target.
@@ -89,6 +90,7 @@ example/preinstall:
 # Recursive "clean" directory target.
 example/clean: example/CMakeFiles/main.dir/clean
 example/clean: example/CMakeFiles/client.dir/clean
+example/clean: example/CMakeFiles/testcli.dir/clean
 .PHONY : example/clean
 
 #=============================================================================
@@ -142,6 +144,32 @@ client: example/CMakeFiles/client.dir/rule
 example/CMakeFiles/client.dir/clean:
 	$(MAKE) $(MAKESILENT) -f example/CMakeFiles/client.dir/build.make example/CMakeFiles/client.dir/clean
 .PHONY : example/CMakeFiles/client.dir/clean
+
+#=============================================================================
+# Target rules for target example/CMakeFiles/testcli.dir
+
+# All Build rule for target.
+example/CMakeFiles/testcli.dir/all:
+	$(MAKE) $(MAKESILENT) -f example/CMakeFiles/testcli.dir/build.make example/CMakeFiles/testcli.dir/depend
+	$(MAKE) $(MAKESILENT) -f example/CMakeFiles/testcli.dir/build.make example/CMakeFiles/testcli.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gwl/allcode/server/build/CMakeFiles --progress-num=27,28,29,30,31,32,33,34,35,36,37,38,39 "Built target testcli"
+.PHONY : example/CMakeFiles/testcli.dir/all
+
+# Build rule for subdir invocation for target.
+example/CMakeFiles/testcli.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gwl/allcode/server/build/CMakeFiles 13
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/CMakeFiles/testcli.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gwl/allcode/server/build/CMakeFiles 0
+.PHONY : example/CMakeFiles/testcli.dir/rule
+
+# Convenience name for target.
+testcli: example/CMakeFiles/testcli.dir/rule
+.PHONY : testcli
+
+# clean rule for target.
+example/CMakeFiles/testcli.dir/clean:
+	$(MAKE) $(MAKESILENT) -f example/CMakeFiles/testcli.dir/build.make example/CMakeFiles/testcli.dir/clean
+.PHONY : example/CMakeFiles/testcli.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

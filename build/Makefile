@@ -142,6 +142,19 @@ client/fast:
 	$(MAKE) $(MAKESILENT) -f example/CMakeFiles/client.dir/build.make example/CMakeFiles/client.dir/build
 .PHONY : client/fast
 
+#=============================================================================
+# Target rules for targets named testcli
+
+# Build rule for target.
+testcli: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testcli
+.PHONY : testcli
+
+# fast build rule for target.
+testcli/fast:
+	$(MAKE) $(MAKESILENT) -f example/CMakeFiles/testcli.dir/build.make example/CMakeFiles/testcli.dir/build
+.PHONY : testcli/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -152,6 +165,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... client"
 	@echo "... main"
+	@echo "... testcli"
 .PHONY : help
 
 

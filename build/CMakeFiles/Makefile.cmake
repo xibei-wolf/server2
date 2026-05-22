@@ -48,4 +48,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "example/CMakeFiles/main.dir/DependInfo.cmake"
   "example/CMakeFiles/client.dir/DependInfo.cmake"
+  "example/CMakeFiles/testcli.dir/DependInfo.cmake"
   )
